@@ -1,0 +1,109 @@
+@import './base/common';
+@import './utils/utils-main';
+@import './base/base';
+@import './components/header';
+@import './components/site-navigation';
+@import './components/burger-menu';
+@import './components/categories';
+@import './components/support';
+@import './components/swiper';
+@import './components/categories-render';
+@import './components/modal-window';
+@import './components/loader';
+@import './components/pagination';
+@import './components/scroll-up';
+@import './components/start-popup';
+@import './components/shopping-list-render';
+@import './components/see-more';
+
+// ----------- for mark up home page
+
+$mobile: 479.97px;
+$tablet: 767.98px;
+$desktop: 1199.97px;
+
+.categories-wrap {
+    height: 228px;
+    overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+  
+@media screen and (min-width: $tablet){
+
+    // width: 337px;
+    height: 472px;
+}
+@media screen and (min-width: $desktop) {
+
+}
+        
+}
+
+
+.categories-render-wrap{
+    
+    display: flex;
+
+    @media screen and (max-width: 1196px)   {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: center;
+        
+        margin: 69px 0 0 ;
+        padding-top: 40px;
+     }
+}
+.wrapper{
+    @media screen and (max-width: 1196px)   {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    
+    
+    @media screen and (min-width: $tablet){
+    display: flex;
+    flex-direction: row;
+    gap:32px;
+    
+
+    }
+    @media screen and (min-width: $desktop) {
+        flex-direction: column;
+        gap:0;
+        
+     
+    }
+}
+.desctop-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    @media screen and (min-width: $tablet){
+        gap: 100px;
+    }
+
+
+@media screen and (min-width: $desktop) {
+    gap: 40px;
+    flex-direction: row;
+}
+}
+.support-wrap{
+    @media screen and (min-width: $tablet){
+
+    margin-top: 104px;
+    }
+    @media screen and (min-width: $desktop){
+    margin-top: 86px;
+}
+}
